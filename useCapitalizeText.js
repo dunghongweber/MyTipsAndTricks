@@ -1,3 +1,4 @@
+//use this hook or install lodash and use lodash.startCase()
 const useCapitalizeText = () => {
 
   const capitalizeText = (text) => {
