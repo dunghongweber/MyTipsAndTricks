@@ -1,3 +1,6 @@
+/*
+  https://www.designcise.com/web/tutorial/how-to-reuse-common-css-in-styled-components
+*/
 import styled, { css } from 'styled-components';
 
 //working with props
