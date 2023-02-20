@@ -1,5 +1,6 @@
 /*
   https://www.designcise.com/web/tutorial/how-to-reuse-common-css-in-styled-components
+  antd props usually take in string value only, don't use boolean value
 */
 import styled, { css } from 'styled-components';
 
