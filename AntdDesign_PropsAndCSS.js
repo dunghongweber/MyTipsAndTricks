@@ -12,6 +12,11 @@ export const DivStatus = styled.div`
   background-image: url(${(props) => props.picture}); /* The image used */
 `
 
+//props with CSS function
+const styledDiv = styled.div`
+  ${props => props.takeViewportHeight && `min-height: calc(100vh - 16px);`}
+`
+
 // REUSE: extract CSS
 const CommonStyle = css`
     height: 50px;
