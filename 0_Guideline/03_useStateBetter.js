@@ -36,7 +36,7 @@ const MyPage = ({defaultList = []}) => {
     setCount(currentVal => currentVal = 5)
   }
   
-  //modify array of objects using map
+  //modify array of objects using map, simple
   function handleChangeName = (id, value) => {
     const newTodos = todos.map(item => {
       //find item using id and make change
@@ -49,20 +49,37 @@ const MyPage = ({defaultList = []}) => {
     
     setTodos(currentTodos => currentTodos = newTodos)
   }
+  //modify array of objects using map, advanced
+  function updateName(id, value) {
+    setTodos(prevTodos => {
+      const newTodos = [...prevTodos]
+      const todo = newTodos.find(item => item.id === id)
+      user.name = value
+      return newTodos
+    })
+  }
   
-  //WORKING WITH FIND for up to date state array
-  //useState to store id, then create a new variable to perform calculation to get latest todos array
+  
   /**
+    READ: https://blog.webdevsimplified.com/2019-11/never-store-derived-state/
+    WORKING WITH FIND for latest state array DERIVED-STATE
+    1. use useState to store id
+    2. then create a new variable to perform calculation to get latest todos array
+    
     DO NOT DO
     const [selectedTodo, setSelectedTodo] = useState()
     
     const handleSelectTodo = (id) => {
-      //this is using a DEPRIVED/OLD state of todos
+      //this is using a DERIVED/OLD state of todos
       setSelectedTodo(todos.find(item => todo.id === selectedId))
     } 
   */
   const [selectedId, setSelectedId] = useState(0)
   const selectedTodo = todos.find(item => todo.id === selectedId)
+  //advanced way, use useMemo
+  const selectedTodo = useMemo(() => {
+    return todos.find(item => item.id === setSelectedId)
+  }, [todos, selectedId])
   
   
   return (<SomeUI />)
