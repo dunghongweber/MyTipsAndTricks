@@ -2,10 +2,11 @@
   1. Only NESTED Components in 3 layers
   2. Use GRID before FLEX, use FLEX only for the very last layer or basic component
   3. DO NOT use redundant <div> but use <></> or <React.Fragment></React.Fragment>
+  4. for Props Drilling: use useContext before using Redux. However, useContext makes component un-reusable
 */
 
 /********************
-  4. When create a component, create a directory/folder name of that component.
+  5. When create a component, create a directory/folder name of that component.
   then create a JS file with the regular name of that component MyComponent.js
   then create a index.js file to export your component 
 */
