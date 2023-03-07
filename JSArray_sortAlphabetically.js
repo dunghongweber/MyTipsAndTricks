@@ -5,3 +5,6 @@ users.sort(function(a, b){
     if(a.firstname > b.firstname) { return 1; }
     return 0;
 })
+
+//or using localeComppare
+users.sort((a, b) => a.firstname.localeCompare(b.firstname))
