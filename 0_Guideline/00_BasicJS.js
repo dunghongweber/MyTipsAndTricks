@@ -80,3 +80,31 @@ export default myComponent = () => {
     }
  }
 
+ /********************
+  USE Guard Clauses for handling error in function
+  https://blog.webdevsimplified.com/2020-01/guard-clauses/
+*/
+ function numberToString = (number) => {
+   //instead of this
+   if(number != null){
+     if(number < 0){
+       return `${Math.abs(number)}`
+     }else{
+       return number.toString()
+     }
+   }
+   
+   //convert above to Guard Clauses
+    if(number == null) return
+    if(number < 0) return `${Math.abs(number)}`
+    return number.toString()
+ }
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
