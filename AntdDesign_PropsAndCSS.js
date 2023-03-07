@@ -10,6 +10,9 @@ export const DivStatus = styled.div`
   z-index: ${(props) => props.zindex};
   margin-left: ${(props) => props.first};
   background-image: url(${(props) => props.picture}); /* The image used */
+  bacbackground-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
 `
 
 //props with CSS function
