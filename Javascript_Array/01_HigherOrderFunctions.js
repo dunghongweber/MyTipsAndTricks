@@ -6,6 +6,12 @@ const squads = [
   { name: "Echo", members: 7, rank: 1, specialized: "command" },
   { name: "Foxtrox", members: 5, rank: 4, specialized: "asault" },
 ];
+/***********************
+  SPREAD opertation
+  copying array
+*/
+let pokemon = ["poke1", "poke2", "poke3"];
+pokemon = [...pokemon, "poke4", "poke5"];
 
 /***********************
   FOREACH
