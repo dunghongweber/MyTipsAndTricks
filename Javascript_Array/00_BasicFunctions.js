@@ -1,3 +1,12 @@
+/**
+  READ: 
+  https://www.w3schools.com/js/js_array_methods.asp
+  
+  EXERCISE:
+  https://www.w3resource.com/javascript-exercises/javascript-array-exercises.php
+  https://www.tutorialsandyou.com/javascript/javascript-array-exercises-practice-and-solution-15.html
+*/
+
 /************
   FIND
 */
