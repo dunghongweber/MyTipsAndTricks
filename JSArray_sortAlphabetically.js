@@ -6,5 +6,9 @@ users.sort(function(a, b){
     return 0;
 })
 
-//or using localeComppare
+/**
+    OR using String.prototype.localeCompare()
+    read more about localeCompare here
+    https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/localeCompare
+*/
 users.sort((a, b) => a.firstname.localeCompare(b.firstname))
