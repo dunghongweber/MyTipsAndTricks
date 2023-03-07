@@ -24,6 +24,7 @@ function Page() {
 
 /*******************
   Currying for better code look
+  use for small functions
 */
 //instead of
 const handleChange = (e, id) => {
