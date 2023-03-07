@@ -47,7 +47,8 @@ export default myComponent = () => {
 */
  export const ImageProduct = styled.div`
     background-image: url(${(props) => props.picture});
-    background-repeat: none;
+    bacbackground-repeat: no-repeat;
+    background-position: center;
     background-size: contain;
     
     padding-top: 100%; //to make this a square
