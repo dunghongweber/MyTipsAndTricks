@@ -1,4 +1,7 @@
 import styled from "styled-component"
+/**
+  https://www.w3schools.com/css/css_align.asp
+*/
 
 export const EasyCenterAlign = styled.div`
   text-align: center; //vertical
