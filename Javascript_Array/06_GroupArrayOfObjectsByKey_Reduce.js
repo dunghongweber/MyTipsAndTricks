@@ -47,3 +47,27 @@ const cars_result = {
         }
     ],
 }
+
+
+/***********************
+    mututate to a new Array
+    [
+        {make: 'audi', total: 2},
+        {make: 'ford', total: 3}
+    ]
+*/
+cars.reduce((acc, curr) => {
+    acc = acc || [] //reinitiate acc as empty array
+    if(acc.find(item => item.make === curr.make)){
+        acc = acc.map(item => {
+            if(item.make === current.make){
+                item.total += 1
+            }
+            return item
+        })
+    }else{
+        acc = acc.push({make: curr.make, total: 1})
+    }
+    
+    return acc
+},[])
