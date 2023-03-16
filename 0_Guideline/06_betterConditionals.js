@@ -5,9 +5,7 @@ function test(fruit) {
   // extract conditions to array
   const redFruits = ['apple', 'strawberry', 'cherry', 'cranberries'];
 
-  if (redFruits.includes(fruit)) {
-    console.log('red');
-  }
+  if (redFruits.includes(fruit)) {...}
 }
 
 /**
@@ -18,13 +16,8 @@ function test(fruit, quantity) {
 
   if (!fruit) throw new Error('No fruit!'); // condition 1: throw error early
   if (!redFruits.includes(fruit)) return; // condition 2: stop when fruit is not red
-
-  console.log('red');
-
   // condition 3: must be big quantity
-  if (quantity > 10) {
-    console.log('big quantity');
-  }
+  if (quantity > 10) {...}
 }
 
 /**
@@ -34,7 +27,7 @@ function test(fruit, quantity = 1) { // if quantity not provided, default to one
   if (!fruit) return;
   console.log(`We have ${quantity} ${fruit}!`);
 }
-function test({name} = {}) {
+function test({name} = {}) { //destructure to get object property that you need
   console.log (name || 'unknown');
 }
 
