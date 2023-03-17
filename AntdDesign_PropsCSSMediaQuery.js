@@ -13,6 +13,10 @@ export const DivStatus = styled.div`
   bacbackground-repeat: no-repeat;
   background-position: center;
   background-size: contain;
+  
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
 `
 
 //props with CSS function
