@@ -16,3 +16,7 @@ var xAxis = d3.axisBottom(xScale)
          return d3.timeFormat('%Y')(date);
        }
     });
+
+//date format for d3 scaleTime and remove unwanted clock time ticks. Remove 12pm for timeScale()
+const xAxis = d3.axisBottom(x)
+    .ticks(d3.timeDay.every(1), '%-d %b %Y');
