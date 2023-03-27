@@ -3,6 +3,11 @@ const capitalize = (str) => `${str.charAt(0).toUpperCase()}${str.slice(1)}`;
 
 //add or remove Math.round if needed
 const calculatePercent = (value, total) => Math.round((value / total) * 100)
+//toFixed() returns a string value
+const calculatePercent = (value, total) => {
+  const percent = (value / total) * 100
+  return isNaN(percent) ? 0 : percent.toFixed(2)
+}
 
 //get random item from array (items)
 const getRandomItem = (items) =>  items[Math.floor(Math.random() * items.length)];
