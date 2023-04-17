@@ -51,3 +51,7 @@ const insert = (arr, index, newItem) => [...arr.slice(0, index), newItem, ...arr
 const items = [1, 2, 4, 5];
 // insert the number 3 at index 2:
 insert(items, 2, 3); // [1, 2, 3, 4, 5]
+
+// format a number with commas as thousands separators
+const numberWithCommas = (x) => x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")
+
