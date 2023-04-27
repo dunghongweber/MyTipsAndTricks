@@ -68,3 +68,13 @@ users.sort(function(a, b){
     https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/localeCompare
 */
 users.sort((a, b) => a.firstname.localeCompare(b.firstname))
+
+//sort string alphabetically
+const sortStr = (str) => str.split('').sort().join('')
+
+//compare 2 arrays
+const compareArrays = (a, b) =>
+  a.length === b.length &&
+  a.every((element, index) => element === b[index])
+//or
+const compareArrays = (array1,array2) => JSON.stringify(array1) === JSON.stringify(array2)
