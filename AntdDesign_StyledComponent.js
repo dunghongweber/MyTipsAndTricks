@@ -9,3 +9,25 @@ export const Select = styled(AntSelect)`
     }
   }
 `
+
+// change AntdTable Header
+// https://stackoverflow.com/questions/72011001/how-to-change-antd-table-header-color
+export const Table = styled(AntTable)`
+  .ant-table-thead .ant-table-cell {
+      background-color: green;
+    }
+`
+
+
+// AntdModal: use props to control children components
+// https://stackoverflow.com/questions/63596397/how-to-dynamically-disable-the-button-of-antd-modal-using-button-props
+const example = () => {
+  const disableCondition = calculation
+  
+  return(
+    <Modal
+      ...
+      okButtonProps={{ disabled:  disableCondition  }}
+    >
+  )
+}
