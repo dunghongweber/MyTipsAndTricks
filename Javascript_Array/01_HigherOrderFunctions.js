@@ -25,6 +25,7 @@ const filterArrow = squads.filter((item) => item.rank > 2);
 
 /***********************
   MAP
+  can be used to update object in array base on a condition
 */
 squads.map(item => {
   if(item.members > 5){
