@@ -23,12 +23,6 @@ const sortBy = (arr, key) => arr.sort((a, b) => a[key] > b[key] ? 1 : a[key] < b
 const lessons = [{ position: 1, name: "Intro" }, { position: 0, name: "Basics" }];
 sortBy(lessons, 'position'); 
 
-//check Arrays/Objects are equal
-const isEqual = (a, b) => JSON.stringify(a) === JSON.stringify(b);
-
-isEqual([1, '2'], [1, 2]); // false
-isEqual([1, 2], [1, 2]); // true
-
 //count number of occurences (frequency)
 const countOccurrences = (arr, value) => arr.reduce((a, v) => (v === value ? a + 1 : a), 0);
 
