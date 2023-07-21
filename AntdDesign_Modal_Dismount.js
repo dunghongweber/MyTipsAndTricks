@@ -11,3 +11,4 @@ const Component = () => {
       > ..... </Modal>}
     </div>)
 }
+export default Component
