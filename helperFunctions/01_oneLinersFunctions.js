@@ -47,7 +47,12 @@ const items = [1, 2, 4, 5];
 insert(items, 2, 3); // [1, 2, 3, 4, 5]
 
 // format a number with commas as thousands separators
-const numberWithCommas = (x) => x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")
+export const numberWithCommas = (x) => {
+  if (!x) return '0'
+  if (x % 1 !== 0) x = x.toFixed(2) //handle numbers with decimals
+
+  return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',')
+}
 
 //In our case if two elements (objects) are a and b we want to compare a.firstname and b.firstname
 users.sort(function(a, b){
