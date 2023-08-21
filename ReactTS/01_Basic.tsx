@@ -47,3 +47,24 @@ const LayoutLandingPage: React.FC<Props> = ({ children }) => {
   )
 }
 export default LayoutLandingPage
+
+/**
+  typing for functions
+*/
+interface IData {
+  name: string;
+  city: string;
+  age: number;
+  printMsg: (message: string) => string;
+}
+let myData: IData = {
+  name: "Germán",
+  city: "Buenos Aires",
+  age: 29,
+  printMsg: (message) => message
+};
+/**
+  typing for arrays
+*/
+let numbersArray: number[] = [1, 2, 3]; // We only accept numbers in this array
+let numbersAndStringsArray: (number | string)[] = [1, "two", 3]; // Here we accept numbers and strings.
