@@ -45,3 +45,14 @@ const Square2 = styled.div`
 const Rectangle = styled(Square2)`
     width: 100px;
 `
+
+// TYPESCRIPT: using styled-components props with TypeScript, declare props in an interface/type
+interface Props {
+  width: string;
+  height: string;
+}
+
+const Icon = styled.Image<Props>`
+  width: ${p => p.width};
+  height: ${p => p.height};
+`;
