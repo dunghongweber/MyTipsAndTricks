@@ -11,8 +11,20 @@ export const Select = styled(AntSelect)`
 `
 // Antd Table row hover effect/color
 export const Table = styled(AntTable)`
+  //row expanded effect, use Antd RowName to set this CSS class
+  .table-row-expanded {
+    background-color: ${props => props.theme.CLOUD_BURST_COLOR};
+  }
+
+  //effect when hover a row
   .ant-table-row:hover .ant-table-cell-row-hover {
-    background: #d5f0f7;
+    background: #c9d1f2;
+  }
+
+  //effect when hover an expanded row
+  .ant-table-row:hover.table-row-expanded .ant-table-cell-row-hover {
+    background-color: ${props => props.theme.CLOUD_BURST_COLOR};
+    border: none;
   }
 `
 
