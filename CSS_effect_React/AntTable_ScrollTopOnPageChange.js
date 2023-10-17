@@ -4,3 +4,11 @@ const scrollToTop = () => {
       docTable.scrollTo({ top: 0, behavior: 'smooth' })
     }
   }
+
+  const updatePagination = (newPage, newLimit) => {
+    //...pagination code....
+      
+    //call scroll to top for table
+    scrollToTop()
+
+  }
