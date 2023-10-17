@@ -9,6 +9,12 @@ export const Select = styled(AntSelect)`
     }
   }
 `
+// Antd Table row hover effect/color
+export const Table = styled(AntTable)`
+  .ant-table-row:hover .ant-table-cell-row-hover {
+    background: #d5f0f7;
+  }
+`
 
 // change AntdTable Header
 // https://stackoverflow.com/questions/72011001/how-to-change-antd-table-header-color
