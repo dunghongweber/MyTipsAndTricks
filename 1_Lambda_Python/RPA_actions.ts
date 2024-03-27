@@ -1,3 +1,7 @@
+/**
+This file is for reference if you want to create a whole new RPA with Puppeteer and JSON Schema
+*/
+
 import * as fs from "fs";
 import get from "lodash.get";
 import { Browser, Page } from "puppeteer";
